@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish SwiftCart</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <div class="text-2xl font-bold text-indigo-600">SwiftCart</div>
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+          <li><a href="#home" class="hover:text-indigo-600">Home</a></li>
+          <li>
+            <a href="#products" class="hover:text-indigo-600">Products</a>
+          </li>
+          <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+        <div class="relative">
+          <i class="fas fa-shopping-cart fa-lg cursor-pointer"></i>
+          <span
+            id="cart-count"
+            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center"
+            >0</span
+          >
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
